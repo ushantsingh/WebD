@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        #parent{
+            height: 800px;
+            width: 800px;
+            border: 2px solid red;
+            display: flex;
+            /* justify-content: baseline; */
+            /* justify-content: center; */
+            /* justify-content: end;*/
+            justify-content: flex-start;
+            /* align-items: baseline; */
+            align-items: center;
+            /* align-items: flex-end; */
+        }
+        #parent div{
+            height: 200px;
+            width: 200px;
+        }
+        #parent div:nth-of-type(1){
+            background-color: red;
+        }
+        #parent div:nth-of-type(2){
+            background-color: aquamarine;
+        }
+        #parent div:nth-of-type(3){
+            background-color: #212121;
+        }
+        #parent div:nth-of-type(4){
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    Flex Box
+    <div id="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
