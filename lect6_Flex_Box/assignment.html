@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* #parent {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        #home {
+            margin-right: auto;     
+        }
+
+        #one, #two, #three, #four {
+            margin: 0 15px;
+        }
+
+        button {
+            margin-left: auto;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #parent{
+            background-color: black;
+            color: white;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        #parent2{
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="parent">
+        <div id="one">Home</div>
+        <div id="parent2">
+            <div id="two">About</div>
+            <div id="three">Contact Us</div>
+            <div id="four">Call</div>
+        </div>
+        <div><button>Login</button></div>
+    </nav>
+</body>
+</html>
