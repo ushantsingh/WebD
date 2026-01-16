@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        #body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent {
+            height: 100vh;
+            width: 1600px;
+            border: 2px solid black;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            color: white ;
+            border: 2px solid black;
+            background: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+    </style>
+</head>
+<body id="body" style="background-color: lightcoral;">
+    <div id="parent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>
