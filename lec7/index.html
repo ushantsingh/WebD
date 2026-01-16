@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
     <style>
-        #body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+  
         #parent {
-            height: 600px   ;
-            width: 1600px;
+            height: 600px;
+            /* width: 1600px; */
             border: 2px solid black;
             background: white;
             display: flex;
-            justify-content: space-around;
+            /* justify-content: space-around; */
             align-items: center;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
+            gap: 2px;
         }
         .box{
             height: 100px;
@@ -31,12 +28,22 @@
             align-items: center;
             
         }
+        #one{
+            /* flex-basis:  increaeses width; */
+            /* flex-basis: 200px;   */
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+        }
+        #two{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
     </style>
 </head>
 <body id="body" style="background-color: lightcoral;">
     <div id="parent">
-        <div class="box">1</div>
-        <div class="box">2</div>
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
         <div class="box">5</div>
