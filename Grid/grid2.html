@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            height: 0;
+            margin: 0;box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-size: 30px ;
+        }
+        .container{
+            display: grid;
+            height: 800px;
+            width: 800px;   
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr 2fr 1fr;
+            gap: 20px;
+        }
+        .box{
+            background-color: blue;
+        }
+        #header{
+            display: grid;
+            grid-column: 1/4;
+        }
+        #sidebar{
+            display: grid;
+            grid-row: 2/4;
+        }
+        #conatent1{
+            display: grid;
+            grid-column: 2/4;
+        }
+        #footer{
+            display: grid;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="sidebar">sidebar</div>
+        <div class="box" id="conatent1">conatent1</div>
+        <div class="box" id="conatent2">conatent2</div>
+        <div class="box" id="conatent3">conatent3</div>
+        <div class="box" id="footer">footer</div>
+    </div>
+</body>
+</html>
