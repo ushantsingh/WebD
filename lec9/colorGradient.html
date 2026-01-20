@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <div id="one"></div>
+   <button class ='btn' id="btn"> click</button>
     <script>
         a=5
         console.log(window);
@@ -31,9 +31,14 @@
         //    }
         //    sum()
         
-        document.getElementsByName
-        document.getElementsByClassName
-        document.getElementById
+        let btn=   document.getElementsByClassName("btn")
+        console.log(btn);
+        
+        let body=   document.querySelector("body")
+
+        btn[0].addEventListener("click",()=>{
+            body.style.backgroundColor="red"
+        })
         
         
         
