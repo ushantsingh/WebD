@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            background-color: black;
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes moving {
+            /* from{
+                transform: rotate(0deg) translate(200px) rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg) translate(200px) rotate(-360deg);
+            } */
+
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg) ;
+            }
+        }
+        .sun{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            transform: translateX(200px);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <di class="box">
+            <div class="sun"></div>
+        </di>
+    </div>
+</body>
+</html>
