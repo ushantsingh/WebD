@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition & Transformation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            height: 100vh;  
+            background-color: black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            perspective: 800px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            cursor: pointer;
+            /* transform: translate(200px, 600px); */
+            /* transform: rotate(45deg); */
+            /* transform: skewY(30deg); */
+            /* transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in; */
+            /* transition-delay: 2s; */
+            /* transition: all 3s ease-in 2s; */
+            /* transition: all 3s; */
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes moving{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+            transform: rotate(360deg);
+            }
+        }
+        /* .box:hover{
+            background-color: purple;
+            height: 300px;
+            width: 250px;
+            /* transform: scale(2); */
+            /* transform: scaleX(200px); */
+            /* transform: translate(200px, 600px); */
+
+            /* transform: scaleZ(200px); */
+            /* transform: rotateX(90deg); */
+            /* transform: rotateY(90deg); */ 
+        /* } */ */
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div style="background-color: red;" class="box"></div>
+    </div>
+</body>
+</html>
