@@ -11,7 +11,7 @@
 
         }
         #parent{
-            height: 1200px;
+            height: 3000px;
             width: 1600px;
             display: grid;
             grid-template-columns: repeat(3,1fr);
@@ -19,7 +19,16 @@
             gap: 20px;
         }
         .child{
-         
+            overflow: hidden;
+        }
+        .child img{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            transition: transform 0.4 ease;
+        }
+        .child:hover img{
+            transform: scale(1.25);
         }
         img{
             height: 100%;
